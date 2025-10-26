@@ -65,14 +65,14 @@ export function HeroSection() {
             size="lg"
             className="bg-white text-black rounded-full px-8 py-4 text-lg font-medium transition-all duration-300 hover:bg-gray-50 hover:scale-105 hover:shadow-lg group cursor-pointer relative overflow-hidden"
           >
-            Launch Your Agent Now
+            Launch Agent
             <ArrowRight />
           </Button>
 
           <Button
             variant="outline"
             size="lg"
-            className="rounded-full px-8 py-4 text-lg font-medium border-border hover:bg-accent transition-all duration-200 hover:scale-105 group bg-transparent cursor-pointer"
+            className="rounded-full px-8 py-4 text-lg border-white font-medium border sborder-border hover:bg-accent transition-all duration-200 hover:scale-105 group bg-transparent cursor-pointer"
           >
             <Play />
             See It In Action

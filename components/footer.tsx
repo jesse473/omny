@@ -17,37 +17,34 @@ interface FooterSection {
 }
 
 const footerLinks: FooterSection[] = [
-  {
-    label: "Product",
-    links: [
-      { title: "Features", href: "/features" },
-      { title: "AI Team", href: "/ai-team" },
-      { title: "ROI Calculator", href: "/roi-calculator" },
-      { title: "Integration", href: "/integration" },
-    ],
-  },
+  // {
+  //   label: "Product",
+  //   links: [
+  //     { title: "Features", href: "#features" },
+  //     { title: "AI Team", href: "/ai-team" },
+  //     { title: "ROI Calculator", href: "/roi-calculator" },
+  //     { title: "Integration", href: "/integration" },
+  //   ],
+  // },
   {
     label: "Company",
     links: [
-      { title: "About Us", href: "/about" },
-      { title: "Contact", href: "/contact" },
-      { title: "Privacy Policy", href: "/privacy" },
-      { title: "Terms of Service", href: "/terms" },
+      { title: "Contact", href: "https://x.com/omnyagent" },
+      { title: "Book a call", href: "#" },
     ],
   },
   {
     label: "Resources",
     links: [
-      { title: "Blog", href: "/blog" },
-      { title: "Case Studies", href: "/case-studies" },
-      { title: "Documentation", href: "/docs" },
-      { title: "Support", href: "/support" },
+      { title: "About", href: "#about" },
+      { title: "Features", href: "#features" },
+      { title: "Testimonials", href: "#testimonials" },
     ],
   },
   {
     label: "Social Links",
     links: [
-      { title: "X(Twitter)", href: "#", icon: TwitterIcon },
+      { title: "X(Twitter)", href: "https://x.com/omnyagent", icon: TwitterIcon },
       // { title: "Instagram", href: "#", icon: InstagramIcon },
       // { title: "Youtube", href: "#", icon: YoutubeIcon },
       // { title: "LinkedIn", href: "#", icon: LinkedinIcon },
@@ -65,7 +62,7 @@ export function Footer() {
           <Image src="/logo.png" alt="OmnyAgent Logo" width={64} height={64} className="size-12 invert" />
         </AnimatedContainer>
 
-        <div className="mt-10 grid grid-cols-2 gap-8 md:grid-cols-4 xl:col-span-2 xl:mt-0">
+        <div className="mt-10 grid grid-cols-2 gap-8 md:grid-cols-3 xl:col-span-2 xl:mt-0">
           {footerLinks.map((section, index) => (
             <AnimatedContainer key={section.label} delay={0.1 + index * 0.1}>
               <div className="mb-10 md:mb-0">

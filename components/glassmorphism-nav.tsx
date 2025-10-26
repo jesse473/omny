@@ -8,7 +8,6 @@ const navigation = [
   { name: "About", href: "#about" },
   { name: "Features", href: "#features" },
   { name: "Testimonials", href: "#testimonials" },
-  { name: "Platforms", href: "/platforms" },
 ]
 
 export function GlassmorphismNav() {
